@@ -1,0 +1,189 @@
+/*ヘッダーの編集*/
+
+.header{
+  background-color: #9cceeb;
+  height:100px;
+}
+
+.logo-image{
+    float:left;
+    height: 90px;
+    width: auto;
+    background-color: white;
+    padding :10px
+}
+
+.header-list li{
+    list-style: none;
+    float: left;
+    padding: 33px 20px;
+}
+
+
+/*メインの編集*/
+.main{
+    padding :100px 80px;
+}
+
+.copy-container h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.copy-container span{
+    color:red;
+}
+
+.copy-container p{
+    text-align: center;
+}
+
+/*ボタンの編集*/
+.button-area {
+  display: flex;
+  justify-content: center; /* 中央揃え */
+  gap: 20px;               /* ボタン同士の間隔 */
+  margin-bottom: 20px;     /* 下に余白 */
+}
+
+.button-area button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/*ランキング表の編集*/
+/* ランキング全体の横幅を調整し、中央に配置 */
+.ranking-table {
+  width: 100%;              /*画面いっぱいに広げる*/
+  max-width: 900px;         /* 最大幅を900pxに制限 */
+  margin: 0 auto;           /* 中央寄せ */
+}
+
+/* 各点数の行（点数ラベル＋ゲーム画像）を横並びにする */
+.rank-row {
+  display: flex;            /* 横並びにする */
+  align-items: center;      /* 縦位置を中央揃え */
+  border-bottom: 1px solid #ddd;    /* 行の区切り線 */
+  padding: 15px 0;          /* 上下の余白 */
+}
+
+/* 左側の点数ラベル部分 */
+.rank-label {
+  width: 80px;              /* ラベルの横幅 */
+  font-size: 24px;          /* 文字サイズ */
+  font-weight: bold;        /* 太字 */
+  text-align: center;       /* 中央揃え */
+}
+
+/* 右側のゲーム画像を並べるエリア */
+.rank-games {
+  display: flex;            /* 横並び */
+  gap: 10px;                /* 画像同士の間隔 */
+  flex-wrap: wrap;          /* 横に入りきらない場合は折り返す */
+}
+
+/* ゲーム画像のスタイル */
+.rank-games img,
+.added-image {
+  width: 80px;              /* 画像の横幅 */
+  height: 80px;             /* 画像の高さ */
+  object-fit: cover;        /* 画像を枠に合わせてトリミング */
+  border-radius: 8px;       /* 角を丸くする */
+}
+
+/* 10点〜1点のティアカラー設定 */
+
+/* 10点：赤 */
+.rank-row:nth-child(1) {
+  background-color: #ffdddd;
+}
+
+/* 9点：オレンジ */
+.rank-row:nth-child(2) {
+  background-color: #ffe6cc;
+}
+
+/* 8点：黄色 */
+.rank-row:nth-child(3) {
+  background-color: #fff4cc;
+}
+
+/* 7点：薄黄 */
+.rank-row:nth-child(4) {
+  background-color: #ffffdd;
+}
+
+/* 6点：薄緑 */
+.rank-row:nth-child(5) {
+  background-color: #eeffdd;
+}
+
+/* 5点：緑 */
+.rank-row:nth-child(6) {
+  background-color: #ddffdd;
+}
+
+/* 4点：水色 */
+.rank-row:nth-child(7) {
+  background-color: #ddf7ff;
+}
+
+/* 3点：青 */
+.rank-row:nth-child(8) {
+  background-color: #dde7ff;
+}
+
+/* 2点：濃い青 */
+.rank-row:nth-child(9) {
+  background-color: #ccd9ff;
+}
+
+/* 1点：さらに濃い青 */
+.rank-row:nth-child(10) {
+  background-color: #ccd0ff;
+}
+
+/*ドラッグ中の画像を半透明にする*/
+.added-image:active {
+  opacity: 0.5;
+}
+
+/*削除エリア*/
+#delete-area {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px dashed #ff5555;
+  color: #ff5555;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+/*フッターの編集*/
+.footer{
+  background-color: #3d4e58;
+  height:160px;
+  color :white;
+}
+
+.footer-list{
+    float : right;
+}
+
+.footer-list li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.logo-image-footer{
+    float:left;
+    height: 90px;
+    width: auto;
+    background-color: white;
+    padding :10px
+}
